@@ -71,7 +71,7 @@ local script = G2L["2"];
 	
 	local Library = {}
 	
-	function Library:Notify(Text: string, Color: Color3, Time: number)
+	function Library:Notify(Text: string, Time: number)
 		local PrePosition = UDim2.new(0.5, 0, 1.1, 0)
 		local PostPosition = UDim2.new(0.5, 0, 0.885 - (Active / 15), 0)
 		Active += 1
@@ -79,7 +79,6 @@ local script = G2L["2"];
 		local Template = script.Template:Clone()
 		Template.Parent = script.Parent
 		Template.Label.Text = Text
-		Template.Label.TextColor3 = Color
 		Template.Position = PrePosition
 	
 		local textSize = TextService:GetTextSize(Text, Template.Label.TextSize, Template.Label.Font, Vector2.new(10000, Template.Label.AbsoluteSize.Y))
