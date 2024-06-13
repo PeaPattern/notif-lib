@@ -11,9 +11,11 @@
 local G2L = {};
 
 -- StarterGui.Notifications
-G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
 G2L["1"]["Name"] = [[Notifications]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+G2L["1"]["ResetOnSpawn"] = false;
+G2L["1"]["DisplayOrder"] = 999999;
 
 -- StarterGui.Notifications.LocalScript
 G2L["2"] = Instance.new("LocalScript", G2L["1"]);
@@ -117,8 +119,8 @@ local script = G2L["2"];
 		end
 	end
   
-	return Library	
+	return Library;
 end;
-local library = C_2();
+local Library = C_2();
 
-return library;
+return Library;
