@@ -27,7 +27,7 @@ G2L["3"]["BorderSizePixel"] = 0;
 G2L["3"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["3"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
 G2L["3"]["BackgroundTransparency"] = 0.5;
-G2L["3"]["Size"] = UDim2.new(0.274, 0, 0.05, 0);
+G2L["3"]["Size"] = UDim2.new(0.137, 0, 0.025, 0);
 G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["3"]["Position"] = UDim2.new(0.5, 0, 0.8847006559371948, 0);
 G2L["3"]["Name"] = [[Template]];
@@ -42,7 +42,7 @@ G2L["5"]["BorderSizePixel"] = 0;
 G2L["5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["5"]["FontFace"] = Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["5"]["RichText"] = true;
-G2L["5"]["TextScaled"] = true;
+G2L["5"]["TextWrapped"] = false;
 G2L["5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["5"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
@@ -83,7 +83,7 @@ local script = G2L["2"];
 	
 		local textSize = TextService:GetTextSize(Text, Template.Label.TextSize, Template.Label.Font, Vector2.new(10000, Template.Label.AbsoluteSize.Y))
 		local parentWidth = Template.Parent.AbsoluteSize.X
-		local newScaleX = ((textSize.X + 20) / parentWidth) * 3
+		local newScaleX = ((textSize.X + 20) / parentWidth)
 	
 		Template.Size = UDim2.new(newScaleX, 0, Template.Size.Y.Scale, 0)
 	
