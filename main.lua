@@ -42,7 +42,6 @@ G2L["5"]["BorderSizePixel"] = 0;
 G2L["5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["5"]["FontFace"] = Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["5"]["RichText"] = true;
-G2L["5"]["TextWrapped"] = false;
 G2L["5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["5"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
