@@ -122,4 +122,4 @@ local script = G2L["2"];
 end;
 local Library = C_2();
 
-return Library;
+return Library, G2L["1"];
